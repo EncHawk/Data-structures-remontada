@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>
+    practicing functions here
+  </title>
+</head>
+
+<body>
+  <p>
+    lorem pipsydoodle
+    <input type:text placeholder="type your name" class="js-input">
+
+  </p>
+  <script>
+    let name= document.querySelector('.js-input').innerText;
+    let nameq='pilid';
+    function greet(name){ // doesnt work for any of the falsy values
+      if (name){
+        console.log(`hello there, ${name} mate`);
+      }else{
+        console.log('Hello there.');
+      }
+    }
+
+    let degree = 159;
+    let unit = 'farenheit';
+
+    function convertTemp(degree, unit){ // see it as 25 C or 100 F
+      let result;
+      if (unit){
+         if ( unit ==='celcius' || unit ==='Celcius'){
+          result = (degree * 9/5)+32;
+          console.log(`result : ${result} C`);
+        }else if ( unit ==='farenheit' || unit ==='Farenheit'){
+          result=  (degree-32)*5/9;
+          console.log(`result : ${result} F`);
+        }else{
+          console.log('couldnt read the entry, verify and try again.')
+        }
+      }else{
+        console.log('type a valid entry');
+      }
+    }
+
+    convertTemp(degree, unit);
+  </script>
+</body>
+
+</html>

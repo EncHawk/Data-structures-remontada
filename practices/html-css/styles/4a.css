@@ -1,0 +1,15 @@
+.back-button{
+  display : inline;
+}
+.next-button{
+  display : inline;
+  margin-left: 10px;
+}
+p{
+color:blue;
+display: inline;
+text-align: top;
+margin-left: 10px;
+text-decoration: underline;
+cursor:pointer;
+}

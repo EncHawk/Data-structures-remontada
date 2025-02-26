@@ -1,0 +1,14 @@
+.s3d-button{
+  background-color: rgb(37, 122, 37);
+  color: white;
+  border:none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.s3d-button:active{
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.652);
+}

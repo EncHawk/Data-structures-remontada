@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>flexbox hard</title>
+  <Style>
+    .div{
+      font-family:Roboto;
+    }
+
+    .numdiv{
+      font-weight: 550;
+    }
+
+    .flex-div{
+      display:flex;
+      flex-direction:column;
+      height:100px;      
+      max-width:200px;
+      justify-content: center;
+      padding-left:12px;
+      border:1px;
+      border-width:1px;
+      border-color:rgb(168, 168, 168);
+      border-style:solid;
+      border-radius:4px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.175);
+    }
+  </Style>
+</head>
+<body>
+  <div class="flex-div">
+  <div style="display:flex; flex-direction:row; ; justify-content:space-between;">
+    <div style="font-family: Roboto;">
+    Home
+    </div>
+    <div  class ="numdiv" style="background-color: rgb(87, 32, 215); color:white; padding-left:5px; padding-top:2px;
+    border:none; height:20px; width :20px; border-radius:10px">
+    14
+    </div>
+  </div>
+
+  <div style="display:flex; flex-direction:row; justify-content:space-between;">
+    <div style="font-family: Roboto;">
+    Notifications
+    </div>
+    <div class ="numdiv" style="background-color: rgb(87, 32, 215); color:white; padding-left:5px; padding-top:2px;
+    border:none; height:20px; width :15px; border-radius:10px">
+    3
+    </div>
+  </div>
+
+  <div style="display:flex; flex-direction:row; justify-content:space-between;">
+    <div style="font-family: Roboto;">
+    Messages
+    </div>
+    <div class ="numdiv" style="background-color: rgb(87, 32, 215); color:white; padding-left:5px; padding-top:2px;
+    border:none; height:20px; width :15px; border-radius:10px">
+    7
+    </div>
+  </div>
+</div>
+</body>
+</html>

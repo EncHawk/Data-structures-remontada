@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      buttons with class add remove
+    </title>
+    <style>
+      .magic-button{
+        font-weight:700;
+        border:none;
+        background-color:white;
+        color:black;
+        height:40px;
+        border-radius:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right: 15px; 
+        padding-left: 15px; 
+        margin-right:10px;
+        cursor:pointer;
+      }
+
+      .magic-toggled{
+        background-color:black;
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="js-button1 magic-button"  onclick="const buttonElement = document.
+      querySelector('.js-button1');
+    if (!buttonElement.classList.contains('magic-toggled') ){
+     buttonElement.classList.add('magic-toggled');
+     
+    }else{
+     buttonElement.classList.remove('magic-toggled');
+   
+    }">
+
+      Gaming
+    </button>
+
+
+    <button class="js-button2 magic-button" onclick="const buttonElement2 = document.querySelector('.js-button2');
+       if (!buttonElement2.classList.contains('magic-toggled')){
+        buttonElement2.classList.add('magic-toggled');
+       
+       }else{
+        buttonElement2.classList.remove('magic-toggled');
+      
+       }" >
+      Music
+    </button>
+
+
+    <button class="js-button3 magic-button" onclick="const buttonElement3 = document.querySelector('.js-button3');
+    if (!buttonElement3.classList.contains('magic-toggled')){
+     buttonElement3.classList.add('magic-toggled');
+    
+    }else{
+     buttonElement3.classList.remove('magic-toggled');
+     
+    }" >
+      Tech
+    </button>
+
+    <script>
+
+      
+    </script>
+  </body>
+</html>

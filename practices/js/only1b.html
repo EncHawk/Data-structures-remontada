@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      buttons with class add remove
+    </title>
+    <style>
+      .magic-button{
+        font-weight:700;
+        border:none;
+        background-color:white;
+        color:black;
+        height:40px;
+        border-radius:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right: 15px; 
+        padding-left: 15px; 
+        margin-right:10px;
+        cursor:pointer;
+      }
+
+      .magic-toggled{
+        background-color:black;
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="js-button1 magic-button"  onclick="const buttonElement = document.
+      querySelector('.js-button1');
+      console.log(toggled);
+    if (toggled===false) {
+     buttonElement.classList.add('magic-toggled');
+     toggled=true;
+    }else{
+     buttonElement.classList.remove('magic-toggled'); 
+    }
+    
+    if (toggle===true){
+      toggle=false;
+    }
+    
+    ">
+
+      Gaming
+    </button>
+
+
+    <button class="js-button2 magic-button" onclick="const buttonElement2 = document.querySelector('.js-button2');
+        console.log(toggled);
+       if (musicToggled===false && techToggled===false && gamingToggled===false){
+        buttonElement2.classList.add('magic-toggled');
+        musicToggled=true;
+       }else{
+        buttonElement2.classList.remove('magic-toggled');
+       }
+       " >
+      Music
+    </button>
+
+
+    <button class="js-button3 magic-button" onclick="const buttonElement3 = document.querySelector('.js-button3');
+      console.log(toggled);
+    if (gamingToggled===false && musicToggled===false && techToggled===false){
+     buttonElement3.classList.add('magic-toggled');
+    techToggled=true;
+    }else{
+     buttonElement3.classList.remove('magic-toggled');
+     techToggled=false;
+    }
+    
+    " >
+      Tech
+    </button>
+
+    <script>
+      let gamingToggled=false;
+      let musicToggled=false;
+      let techToggled=false;
+    </script>
+  </body>
+</html>

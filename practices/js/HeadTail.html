@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>
+    Head and Tails 
+  </title>
+</head>
+
+<body>
+
+<p>
+  This is for the that this that thu da
+</p>
+
+<button onclick="player='head';
+    console.log(computer);
+  verdict(player);">
+  Head
+</button>
+
+<button onclick="player='tail';
+  console.log(computer);
+  verdict(player);"> 
+ Tail
+</button>
+
+<script>
+  let  computer=Math.random();
+  let player='';
+
+  function compMove(computer){
+    if( computer < 0.5){
+      computer= 'head';
+    }else if (computer >= 0.5) {
+      computer ='tail';
+    }  
+  }
+
+  function verdict(player){
+    compMove(computer);
+    if(player==='head' && computer==='tail'){
+      alert( `You won mate! GG`);
+    } else if ( computer==='head' && player==='tail'){
+      alert(`Computer won :( Good Luck next time`);
+    }else if ( computer === player){
+      alert('tied go again, we get it theres no tie here. Feel free to assume a natural unforeseen circumstance');
+    }
+    else {
+      alert('theres an error from our end. Will fix soon, come back :) ');
+    }
+  }
+
+  
+  
+  
+</script>
+
+</body>
+
+
+</html>
